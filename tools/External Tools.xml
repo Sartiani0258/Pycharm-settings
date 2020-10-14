@@ -2,7 +2,7 @@
   <tool name="Black" description="Black is the uncompromising Python code formatter." showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="C:\Users\ondrusekm\AppData\Local\Programs\Python\Python37\Scripts\black.exe" />
-      <option name="PARAMETERS" value="&quot;$FilePath$&quot; --line-length 100" />
+      <option name="PARAMETERS" value="&quot;$FilePath$&quot; --line-length 120" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>

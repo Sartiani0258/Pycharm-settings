@@ -2,7 +2,7 @@
   <component name="ApplicationTasksOptions">
     <global-watchers>
       <TaskOptions>
-        <option name="arguments" value="&quot;$FilePath$&quot; --line-length 100" />
+        <option name="arguments" value="&quot;$FilePath$&quot; --line-length 120" />
         <option name="checkSyntaxErrors" value="true" />
         <option name="description" />
         <option name="exitCodeBehavior" value="ERROR" />
