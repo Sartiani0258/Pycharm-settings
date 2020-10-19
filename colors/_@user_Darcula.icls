@@ -3,13 +3,20 @@
     <property name="created">2020-10-14T13:15:55</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2020.2.3.0.0</property>
-    <property name="modified">2020-10-14T16:02:13</property>
+    <property name="modified">2020-10-19T09:24:21</property>
     <property name="originalScheme">Darcula</property>
   </metaInfo>
   <attributes>
     <option name="PY.LINE_COMMENT">
       <value>
         <option name="FOREGROUND" value="6fb321" />
+      </value>
+    </option>
+    <option name="TODO_DEFAULT_ATTRIBUTES">
+      <value>
+        <option name="FOREGROUND" value="f5dc55" />
+        <option name="FONT_TYPE" value="2" />
+        <option name="ERROR_STRIPE_COLOR" value="977ab" />
       </value>
     </option>
   </attributes>
