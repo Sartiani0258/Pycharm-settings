@@ -20,4 +20,11 @@
       <option name="WORKING_DIRECTORY" value="$ContentRoot$" />
     </exec>
   </tool>
+  <tool name="pylint" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="c:\Ondrusek\Programs\Pylint\standard.rc" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
 </toolSet>
