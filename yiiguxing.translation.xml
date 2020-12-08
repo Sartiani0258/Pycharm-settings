@@ -1,6 +1,7 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="pridána" />
       <item value="celkovo" />
       <item value="Nenalezeny" />
       <item value="address" />
@@ -11,7 +12,7 @@
       <map>
         <entry key="ENGLISH" value="1" />
         <entry key="CZECH" value="5" />
-        <entry key="SLOVAK" value="5" />
+        <entry key="SLOVAK" value="6" />
       </map>
     </option>
   </component>
