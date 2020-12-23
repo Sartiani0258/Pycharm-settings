@@ -1,0 +1,8 @@
+<application>
+  <component name="ActionMacroManager">
+    <macro name="Todo">
+      <typing text-keycode="84:0;79:0">to</typing>
+      <action id="EditorChooseLookupItemReplace" />
+    </macro>
+  </component>
+</application>
