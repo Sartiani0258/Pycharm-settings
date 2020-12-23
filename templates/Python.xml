@@ -1,5 +1,25 @@
 <templateSet group="Python">
-  <template name="td" value="  # TODO: " description="TODO akce" toReformat="false" toShortenFQNames="true">
+  <template name="td" value="  # TODO: " description="TODO:" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="New project" value="&quot;&quot;&quot; &#10;&#10;operační systém: Windows 10&#10;architektura: 64&#10;jazyk: Angličtina&#10;rozlišení: 1920x1080 32b&#10;verze URPA: 4.6.0.0_beta r23377&#10;&quot;&quot;&quot;  # TODO: doplnit&#10;&#10;import json&#10;import logging&#10;&#10;import urpa&#10;import utils&#10;&#10;cf = urpa.condition_factory()&#10;&#10;logging.basicConfig(level=logging.INFO, format=&quot;[%(levelname)s %(name)s] %(message)s&quot;)&#10;logger = logging.getLogger(__name__)&#10;&#10;SCREEN_WIDTH = 1920&#10;SCREEN_HEIGHT = 1080&#10;SCREEN_BITS_PER_PIXEL = 32&#10;ENCODING = &quot;utf-8-sig&quot;&#10;ROZMER_OKNA_TUP = (1, 1, 1900, 1000)&#10;&#10;with open(&quot;config.json&quot;, &quot;r&quot;, encoding=ENCODING) as json_file:&#10;    CONFIG = json.load(json_file)&#10;logger.info(f&quot;Konfigurace je: '{CONFIG}'.&quot;)&#10;&#10;ENV = CONFIG[&quot;env&quot;]&#10;URL = CONFIG[&quot;url&quot;]&#10;USERNAME = CONFIG[&quot;username&quot;]&#10;&#10;if ENV == &quot;dev&quot;:&#10;    logger.info(&quot;Vývojový běh.&quot;)&#10;    DEBUG = True&#10;    logger.setLevel(logging.DEBUG)&#10;    SET_AUTO_CLOSE = False&#10;    DEFAULT_TIMEOUT = 10000&#10;&#10;elif ENV == &quot;test&quot;:&#10;    logger.info(&quot;Testovací běh.&quot;)&#10;    DEBUG = False&#10;    SET_AUTO_CLOSE = False&#10;    DEFAULT_TIMEOUT = 10000&#10;&#10;elif ENV == &quot;prod&quot;:&#10;    logger.info(&quot;Produkční běh.&quot;)&#10;    DEBUG = False&#10;    SET_AUTO_CLOSE = True&#10;    DEFAULT_TIMEOUT = 10000&#10;else:&#10;    raise RuntimeError(&quot;Neznámé prostředí.&quot;)&#10;&#10;&#10;def nastaveni_robota() -&gt; None:&#10;    &quot;&quot;&quot;Zkontrolování a nastavení rozlišení obrazovky,&#10;    přenesení robota do popředí, změna logovacích obrázků z bmp na png, nastavení výchozího časovače&quot;&quot;&quot;&#10;    urpa.bring_to_foreground()&#10;    try:&#10;        urpa.check_screen_resolution(width=SCREEN_WIDTH, height=SCREEN_HEIGHT, bits_per_pixel=SCREEN_BITS_PER_PIXEL)&#10;    except ValueError:&#10;        logger.info(&#10;            f&quot;Chybné nastavení obrazovky, obrazovku nastavuji na {SCREEN_WIDTH}x{SCREEN_HEIGHT}x{SCREEN_BITS_PER_PIXEL}&quot;&#10;        )&#10;        urpa.set_screen_resolution(width=SCREEN_WIDTH, height=SCREEN_HEIGHT, bits_per_pixel=SCREEN_BITS_PER_PIXEL)&#10;    urpa.default.screenshot_format = &quot;png&quot;&#10;    urpa.set_debug_mode(debug_mode=DEBUG)&#10;    urpa.set_default_timeout(DEFAULT_TIMEOUT)&#10;    utils.kill(&quot;iexplore.exe&quot;)&#10;&#10;&#10;def start_app():&#10;    &quot;&quot;&quot;Otevření aplikace, změna velikosti aplikace, ověření načtení stránky&#10;    a vrácení instance třídy App.&quot;&quot;&quot;&#10;    app = urpa.exec_app()&#10;    app.set_auto_close(auto_close=SET_AUTO_CLOSE)&#10;    app.resize_tp_window(cf.name().window(), ROZMER_OKNA_TUP)&#10;    return app&#10;&#10;&#10;def prihlaseni(app) -&gt; None:&#10;    &quot;&quot;&quot;Načtení hesla z Windows Vault. Vložení uživatelského jména, hesla a přihlášení do aplikace UFO.&#10;    Ověření úspěšnosti přihlášení.&quot;&quot;&quot;&#10;    password = urpa.get_password(URL, USERNAME)&#10;&#10;&#10;def main():&#10;    &quot;&quot;&quot;Funkce kterou volá UltimateRPA Robot.&quot;&quot;&quot;&#10;    nastaveni_robota()&#10;    app = start_app()&#10;    prihlaseni(app)&#10;" description="New project robot template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="tdv" value="  # TODO: Vymaz" description="TODO: Vymaz" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="tdd" value="  # TODO: Deaktivuj" description="TODO: Deaktivuj" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="Python" value="true" />
+    </context>
+  </template>
+  <template name="tda" value="  # TODO: Aktivuj" description="TODO: Aktivuj" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="Python" value="true" />
     </context>
