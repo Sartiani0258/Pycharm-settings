@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
+      <mapping pattern="01_New_Revision" type="Markdown" />
       <mapping pattern="mereni" type="PLAIN_TEXT" />
       <mapping pattern="adresy" type="PLAIN_TEXT" />
       <mapping ext="db" type="SQL" />
