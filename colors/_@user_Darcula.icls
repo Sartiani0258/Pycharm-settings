@@ -3,7 +3,7 @@
     <property name="created">2020-10-14T13:15:55</property>
     <property name="ide">PyCharmCore</property>
     <property name="ideVersion">2020.2.3.0.0</property>
-    <property name="modified">2021-02-11T10:06:25</property>
+    <property name="modified">2021-04-01T16:22:19</property>
     <property name="originalScheme">Darcula</property>
   </metaInfo>
   <colors>
@@ -21,6 +21,11 @@
     <option name="ScrollBar.thumbColor" value="fa000047" />
   </colors>
   <attributes>
+    <option name="LOG_EXPIRED_ENTRY">
+      <value>
+        <option name="FOREGROUND" value="ffffff" />
+      </value>
+    </option>
     <option name="PY.LINE_COMMENT">
       <value>
         <option name="FOREGROUND" value="6fb321" />
