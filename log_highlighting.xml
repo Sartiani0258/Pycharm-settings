@@ -4,7 +4,7 @@
       <LogHighlightingPattern enabled="false" pattern="^\s*e(rror)?\s*$" action="HIGHLIGHT_LINE" fg="-65536" bold="true" stripe="true" />
       <LogHighlightingPattern enabled="false" pattern="^\s*w(arn(ing)?)?\s*$" action="HIGHLIGHT_LINE" fg="-22016" bold="true" />
       <LogHighlightingPattern enabled="false" pattern="^\s*i(nfo)?\s*$" action="HIGHLIGHT_LINE" fg="-12599489" />
-      <LogHighlightingPattern pattern="Traceback" fg="-16119286" bg="-6218234" stripe="true" />
+      <LogHighlightingPattern enabled="false" pattern="Traceback" fg="-16119286" bg="-6218234" stripe="true" />
       <LogHighlightingPattern enabled="false" pattern="---------------------------------------" fg="-12074240" bold="true" stripe="true" />
       <LogHighlightingPattern enabled="false" pattern="error" fg="-59630" bold="true" stripe="true" />
     </highlightingPatterns>
