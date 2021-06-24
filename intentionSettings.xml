@@ -3,5 +3,6 @@
     <ignoreAction name="Language injection/Edit injected fragment" />
     <ignoreAction name="Language injection/Uninject language or reference" />
     <ignoreAction name="Language injection/Inject language or reference" />
+    <ignoreAction name="Python/Invert 'if' condition" />
   </component>
 </application>
